@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    background-color: #0b2e1a;
+    display: flex;
+    text-align: center;
+    height: 100px;
+}
+
+.logo-image{
+    width: -20%;
+}
+.logo{
+    width:70px
+}
+.logo-text{
+    color: white;
+    margin-left: 40px;
+}
