@@ -1,22 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.header{
-    background-color: #0b2e1a;
-    display: flex;
-    text-align: center;
-    height: 100px;
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
 }
 
-.logo-image{
-    width: -20%;
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  background: #0b0b0b;
+  position: sticky;
+  top: 0;
 }
-.logo{
-    width:70px
+
+.logo img {
+  height: 60px;
 }
-.logo-text{
-    color: white;
-    margin-left: 40px;
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Dropdown */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #222;
+  list-style: none;
+  padding: 10px;
+  top: 30px;
+}
+
+.dropdown-menu li {
+  padding: 5px 10px;
+}
+
+.dropdown-menu a {
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Call button */
+.call-btn {
+  background: green;
+  color: white;
+  padding: 10px 15px;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  padding: 60px 40px;
+}
+
+.home {
+  background: #e8f5e9;
+  text-align: center;
+}
+
+.about {
+  background: #f1f1f1;
+}
+
+.plants {
+  background: #ffffff;
+}
+
+.projects {
+  background: #f1f1f1;
+}
+
+.contact {
+  background: #e8f5e9;
+}
+
+/* Cards */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  text-align: center;
 }
